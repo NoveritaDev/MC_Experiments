@@ -1,0 +1,43 @@
+main: me.noverita.thirdlegionplugin.ThirdLegionPlugin
+name: ThirdLegionPlugin
+version: '1.0'
+description: A plugin made for Third Legion, by Noverita
+load: POSTWORLD
+author: Noverita
+website: spigotmc.org
+prefix: Testing
+api-version: 1.13
+commands:
+  mercy:
+    description: Foo command
+    permission: thirdlegion.mercy
+    permission-message: You do not have permission!
+    usage: /mercy
+  purify:
+    description: Shows a fancy animation.
+    permission: thirdlegion.purify
+    permission-message: You do not have permission!
+    usage: /purify
+  secret:
+    description: Secret stuff.
+    permission: thirdlegion.secret
+    permission-message: You do not have permission!
+    usage: /secret <key>
+  getspell:
+    description: Gives the player a spell tome.
+    permission: thirdlegion.getspell
+    permission-message: You do not have permission!
+    usage: /getspell <Spell Name>
+permissions:
+  thirdlegion.mercy:
+    description: Allows the user to choose to be merciful, stopping them from killing anyone
+    default: true
+  thirdlegion.secret:
+    description: Gives the user access to some secret abilities.
+    default: op
+  thirdlegion.purify:
+    description: Allows the user to show a fancy animation.
+    default: op
+  thirdlegion.getspell:
+    description: Gives the user a spell tome.
+    default: op
